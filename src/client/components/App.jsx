@@ -13,7 +13,7 @@ const App = () => {
   //     ws.close();
   //   };
   // }, []);
-  const [text, send] = useMessageSocket()
+  const [text, send] = useMessageSocket();
   return (
     <>
       <textarea value={text} onChange={(e) => send(e.target.value)} />

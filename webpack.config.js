@@ -27,5 +27,10 @@ module.exports = {
     publicPath: '/build',
     compress: true,
     port: 8080,
+    proxy: {
+      '/interview/*': {
+        target: 'http://localhost:3000',
+      },
+    },
   },
 };

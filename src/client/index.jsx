@@ -3,5 +3,5 @@ import { render } from 'react-dom';
 import App from './components/App';
 import { init } from './util/socket';
 
-init();
-render(<App  />, document.getElementById('root'));
+init(40510);
+render(<App />, document.getElementById('root'));
